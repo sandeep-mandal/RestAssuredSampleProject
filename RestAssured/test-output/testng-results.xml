@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6526" started-at="2018-07-30T17:59:53Z" finished-at="2018-07-30T17:59:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6526" started-at="2018-07-30T17:59:53Z" finished-at="2018-07-30T17:59:59Z">
+      <class name="com.restapi.weatherapp.tests.CodeChallenge">
+        <test-method status="PASS" signature="testKnownTempRange()[pri:0, instance:com.restapi.weatherapp.tests.CodeChallenge@152aa092]" name="testKnownTempRange" duration-ms="6235" started-at="2018-07-30T13:59:53Z" finished-at="2018-07-30T13:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKnownTempRange -->
+        <test-method status="PASS" signature="testResponseCodeAndFormat()[pri:0, instance:com.restapi.weatherapp.tests.CodeChallenge@152aa092]" name="testResponseCodeAndFormat" duration-ms="205" started-at="2018-07-30T13:59:59Z" finished-at="2018-07-30T13:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCodeAndFormat -->
+      </class> <!-- com.restapi.weatherapp.tests.CodeChallenge -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

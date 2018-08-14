@@ -1,0 +1,7 @@
+<suite name="DemoSuiteName" verbose="1">
+	<test name="DemoSuiteName">
+		<classes>
+			<class name="com.restapi.weatherapp.tests.CodeChallenge" />
+		</classes>
+	</test>
+</suite>
