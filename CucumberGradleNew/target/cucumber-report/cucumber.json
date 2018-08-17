@@ -1,0 +1,108 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8340351437,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.setUpLocal()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login functionality for a social networking site",
+        "description": "",
+        "id": "facebook;login-functionality-for-a-social-networking-site;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7306260061,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to Facebook",
+            "match": {
+              "location": "StepDefinitions.user_navigates_to_Facebook()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4491608418,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter Username as \"username1\" and Password as \"password1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username1",
+                  "offset": 21
+                },
+                {
+                  "val": "password1",
+                  "offset": 49
+                }
+              ],
+              "location": "StepDefinitions.I_enter_Username_as_and_Password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 278189,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "make a call to soapui",
+            "match": {
+              "location": "StepDefinitions.make_a_call_to_soapui()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9965840563,
+              "error_message": "java.lang.AssertionError: SOAP Test: FAILED: Exception:\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat cucumberGradle.SoapProjects.runSoapUI(SoapProjects.java:47)\r\n\tat cucumberGradle.StepDefinitions.validateRelogin(StepDefinitions.java:107)\r\n\tat ✽.Then login should be unsuccessful(facebook.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "login should be unsuccessful",
+            "match": {
+              "location": "StepDefinitions.validateRelogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@SoapUI"
+          }
+        ]
+      }
+    ],
+    "name": "facebook",
+    "description": "",
+    "id": "facebook",
+    "keyword": "Feature",
+    "uri": "facebook.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SoapUI"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+2018-08-17 11:43:23,329 WARN  [SoapUI] Missing folder [D:\Workspaces\Maven\CucumberGradleNew\ext] for external libraries
+2018-08-17 11:43:24,429 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\sande\soapui-settings.xml]
+2018-08-17 11:43:25,784 INFO  [PluginManager] 0 plugins loaded in 0 ms
+2018-08-17 11:43:25,784 INFO  [DefaultSoapUICore] All plugins loaded
+2018-08-17 11:43:29,209 INFO  [WsdlProject] Loaded project from [file:/D:/Workspaces/Maven/CucumberGradleNew/src/test/resources/calculator-soapui-project.xml]
+2018-08-17 11:43:29,238 INFO  [SoapUITestCaseRunner] Setting project property [ExpectedResult] to [9]
+2018-08-17 11:43:29,253 INFO  [SoapUITestCaseRunner] Setting project property [InputValOne] to [5]
+2018-08-17 11:43:29,253 INFO  [SoapUITestCaseRunner] Setting project property [InputValTwo] to [4]
+2018-08-17 11:43:29,253 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [calculator]
+2018-08-17 11:43:29,253 INFO  [SoapUITestCaseRunner] Running TestCase [Add TestCase]
+2018-08-17 11:43:29,285 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Add TestCase]
+2018-08-17 11:43:29,316 INFO  [SoapUITestCaseRunner] running step [TestProperties]
+2018-08-17 11:43:29,542 INFO  [SoapUITestCaseRunner] running step [Add]
+2018-08-17 11:43:31,059 INFO  [SoapUITestCaseRunner] Assertion [Verify Addition of 2 numbers was successful] has status VALID
+2018-08-17 11:43:31,073 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Add TestCase], time taken: 1711ms, status: FINISHED
+2018-08-17 11:43:31,073 INFO  [SoapUITestCaseRunner] TestCase [Add TestCase] finished with status [FINISHED] in 1711ms

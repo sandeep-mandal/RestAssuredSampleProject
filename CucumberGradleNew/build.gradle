@@ -1,0 +1,43 @@
+apply plugin: 'java-library'
+
+repositories {	
+    mavenCentral() 
+    jcenter()
+    maven { url "http://www.soapui.org/repository/maven2"}    
+}
+
+dependencies {
+   testCompile 'junit:junit:4.12',
+   'info.cukes:cucumber-java:1.2.5',
+   'info.cukes:cucumber-junit:1.2.5',
+   'info.cukes:cucumber-core:1.2.5'
+   compile(group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.5.2')
+   compile group: 'javax.jms', name: 'javax.jms-api', version: '2.0.1'
+   compile(group: 'com.smartbear.soapui', name: 'soapui', version:'5.4.0') {exclude(module: 'jms' )}     
+}
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+    useTestNG()
+}
+
+task cucumber() {
+	println 'Running Test'
+    dependsOn assemble, compileTestJava
+    //dependsOn testClasses
+    doLast {
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.testRuntimeClasspath + sourceSets.main.output + sourceSets.test.output
+            args = [
+                '--plugin', 'pretty',
+                '--plugin', 'html:build/cucumber',
+                '--plugin', 'json:build/cucumber.json',
+                '--plugin', 'junit:build/cucumber.xml',
+                '--glue', 'cucumberGradle',
+                '--tags', '@SoapUI',
+                'src/test/resources']             
+        }
+    }
+}
