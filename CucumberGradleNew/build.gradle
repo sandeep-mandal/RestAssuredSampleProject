@@ -38,6 +38,9 @@ task cucumber() {
                 '--glue', 'cucumberGradle',
                 '--tags', '@SoapUI',
                 'src/test/resources']             
-        }
-    }
-}
+        		}
+    	}
+	}
+	
+	//task wrapper(type: Wrapper) {
+    //gradleVersion = '4.9'}
